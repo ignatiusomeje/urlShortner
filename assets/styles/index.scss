@@ -1,0 +1,112 @@
+.container-fluid {
+  header {
+    min-height: 80vh;
+  }
+  form {
+    transform: translateY(-5.5rem);
+    background-color: #3b3054;
+    width: 80%;
+    margin: auto;
+    @media screen and (max-width: 576px) {
+      width: 90%;
+      button {
+        width: 100%;
+      }
+    }
+  }
+  .explain {
+    width: 50%;
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+  .secondLast {
+    background-color: #3b3054;
+  }
+  .card-container {
+    padding-bottom: 6rem;
+    .card-one {
+      z-index: 2;
+    }
+    .card-two {
+      transform: translateY(6rem);
+      @media screen and (max-width: 767px) {
+        transform: translateY(3rem);
+      }
+      z-index: 1 !important;
+      &::before {
+        content: "";
+        width: 3.5rem;
+        height: 10px;
+        display: block;
+        background-color: #0dcaf0;
+        transform: translate(-3.5rem, 7rem);
+        @media screen and (max-width: 767px) {
+          transform: translate(215px, -65px) rotate(90deg);
+          width: 5rem;
+        }
+        @media screen and (max-width: 524px) {
+          transform: translate(100%, -65px) rotate(90deg);
+          width: 5rem;
+        }
+      }
+    }
+    .card-three {
+      transform: translateY(9rem);
+      @media screen and (max-width: 767px) {
+        transform: translateY(6rem);
+      }
+      &::before {
+        content: "";
+        width: 3.5rem;
+        height: 10px;
+        display: block;
+        background-color: #0dcaf0;
+        transform: translate(-3.5rem, 4rem);
+        z-index: -1;
+        position: absolute;
+        @media screen and (max-width: 767px) {
+          transform: translate(215px, -65px) rotate(90deg);
+          width: 5rem;
+        }
+        @media screen and (max-width: 524px) {
+          transform: translate(100%, -65px) rotate(90deg);
+        }
+      }
+    }
+  }
+  .img1 {
+    width: 90%;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .card {
+    width: 500px;
+    @media screen and (max-width: 576px) {
+      width: 90%;
+    }
+    .pict-cover {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #3b3054;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translate(1rem, -40px);
+      @media screen and (max-width: 767px) {
+        transform: translate(215px, -40px);
+      }
+      @media screen and (max-width: 524px) {
+        transform: translate(100%, -40px);
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,15 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/styles/index.css">
-  <title>Url Shortner</title>
-</head>
-<body>
-  
-  <script src="./assets/js/bootstrap.min.js"></script>
-  <script src="./assets/js/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <title>Url Shortner</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <nav
+        class="navbar navbar-expand-md bg-white ps-3 ps-md-5 pe-3 pe-md-5 p-3"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-3" href="#">Shortly</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav text-white-50 d-flex gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav d-flex gap-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class=".nav-link btn btn-primary p-1 ps-3 pe-3 rounded-pill w-100"
+                  href="#"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header
+        class="bg-white d-flex p-3 p-sm-5 align-items-center justify-content-center flex-column-reverse flex-md-row gap-5"
+      >
+        <div class="mb-5 mb-md-0 text-center">
+          <h1 class="fw-bold">More than just shorter links</h1>
+          <p class="pb-3 text-black-50">
+            Build your brand's recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <a href="" class="btn btn-info ps-4 pe-4 rounded-pill text-white"
+            >Get Started</a
+          >
+        </div>
+        <div class="mb-5">
+          <img
+            src="./assets/images/illustration-working.svg"
+            alt=""
+            class="d-block img1 me-auto ms-auto"
+          />
+        </div>
+      </header>
+      <section class="p-3 p-md-5 pt-5 pb-5 bg-light">
+        <form action="" class="p-3 rounded-3">
+          <div class="input-group .w-75 ms-auto me-auto gap-1 gap-sm-3">
+            <input
+              type="text"
+              class="form-control p-2 rounded-2"
+              placeholder="Shorten a link here"
+            />
+            <button
+              type="submit"
+              class="btn btn-info rounded-2 ps-2 ps-sm-3 pe-sm-3 pe2"
+            >
+              Shorten It!
+            </button>
+          </div>
+        </form>
+        <div class=""></div>
+        <div class="text-center">
+          <h3 class="fw-bold h2">Advanced Statistics</h3>
+          <p class="explain text-black-50 ms-auto me-auto">
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+          <div
+            class="d-flex gap-5 gap-md-4 mt-5 justify-content-center flex-column flex-md-row align-items-center align-items-md-start card-container"
+          >
+            <div class="card card-one bg-white mt-5">
+              <div class="pict-cover">
+                <img
+                  src="./assets/images/icon-brand-recognition.svg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <div class="p-3 p-lg-4 pt-0 text-start">
+                <h4>Brand Recognition</h4>
+                <p class="">
+                  Boost your brand recognition with each click. Generic links
+                  don't mean a thing. Branded links help instil confidence in
+                  your content.
+                </p>
+              </div>
+            </div>
+            <div class="card card-two bg-white">
+              <div class="pict-cover">
+                <img
+                  src="./assets/images/icon-detailed-records.svg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <div class="text-start p-3 pt-0 p-lg-4">
+                <h4>Detailed Records</h4>
+                <p class="">
+                  Gain insights into who is clicking your links. Knowing when
+                  and where people engage with your content helps inform better
+                  decisions.
+                </p>
+              </div>
+            </div>
+            <div class="card card-three">
+              <div class="pict-cover">
+                <img
+                  src="./assets/images/icon-fully-customizable.svg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <div class="text-start p-3 pt-0 p-lg-4">
+                <h4>Fully Customizable</h4>
+                <p class="">
+                  Improve brand awareness and content discoverability through
+                  customizable links, supercharging audience engagement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="d-flex flex-column align-items-center p-3 p-sm-5 pt-5 pb-5 text-white secondLast"
+      >
+        <h3 class="">Boost your links today</h3>
+        <a
+          href=""
+          class="btn btn-info text-white rounded-pill ps-5 pe-5 p-2 mt-2"
+          >Get Started</a
+        >
+      </section>
+      <footer
+        class="bg-black d-flex text-white justify-content-between p-3 p-sm-5 pt-5 pb-5 flex-column align-items-center align-items-lg-start flex-lg-row gap-4"
+      >
+        <p class="fw-bold fs-3">Shortly</p>
+        <div class="d-flex gap-4 gap-sm-5 flex-column flex-sm-row">
+          <div
+            class="d-flex flex-column gap-3 align-items-center align-items-sm-start me-sm-5"
+          >
+            <h5>Features</h5>
+            <div
+              class="d-flex flex-column gap-2 align-items-center align-items-sm-start"
+            >
+              <a href="" class="text-white-50 text-decoration-none"
+                >Link Shortening</a
+              >
+              <a href="" class="text-white-50 text-decoration-none"
+                >Branded Links</a
+              >
+              <a href="" class="text-white-50 text-decoration-none"
+                >Analytics</a
+              >
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column gap-3 align-items-center align-items-sm-start me-sm-5"
+          >
+            <h5>Resources</h5>
+            <div
+              class="text-white text-decoration-none d-flex flex-column gap-2 align-items-center align-items-sm-start"
+            >
+              <a href="" class="text-white-50 text-decoration-none">Blog</a>
+              <a href="" class="text-white-50 text-decoration-none"
+                >Developers</a
+              >
+              <a href="" class="text-white-50 text-decoration-none">Support</a>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column gap-3 align-items-center align-items-sm-start"
+          >
+            <h5>Company</h5>
+            <div
+              class="d-flex flex-column gap-2 align-items-center align-items-sm-start"
+            >
+              <a href="" class="text-white-50 text-decoration-none">About</a>
+              <a href="" class="text-white-50 text-decoration-none">Our Team</a>
+              <a href="" class="text-white-50 text-decoration-none">Careers</a>
+              <a href="" class="text-white-50 text-decoration-none">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-4">
+          <img src="./assets/images/icon-facebook.svg" alt="" class="" />
+          <img src="./assets/images/icon-twitter.svg" alt="" class="" />
+          <img src="./assets/images/icon-instagram.svg" alt="" class="" />
+          <img src="./assets/images/icon-pinterest.svg" alt="" class="" />
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>
