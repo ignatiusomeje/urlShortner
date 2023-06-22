@@ -1,4 +1,10 @@
 .container-fluid {
+  @media screen and (max-width: 576px)
+ {
+  .btn-close{
+    width: 0 !important;
+  }
+ }
   header {
     min-height: 80vh;
   }
